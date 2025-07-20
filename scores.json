@@ -1,0 +1,142 @@
+[
+  {
+    "level": "Level 1: The Basics",
+    "time_ms": 15000,
+    "moves": 10,
+    "pushes": 3,
+    "timestamp": 1678886400
+  },
+  {
+    "level": "Level 2: Cornered Box",
+    "time_ms": 25000,
+    "moves": 15,
+    "pushes": 5,
+    "timestamp": 1678886500
+  },
+  {
+    "level": "Level 3: Simple Push",
+    "time_ms": 12000,
+    "moves": 8,
+    "pushes": 2,
+    "timestamp": 1678886600
+  },
+  {
+    "level": "Level 4: Wall Block",
+    "time_ms": 18000,
+    "moves": 12,
+    "pushes": 4,
+    "timestamp": 1678886700
+  },
+  {
+    "level": "Level 5: Double Push",
+    "time_ms": 30000,
+    "moves": 20,
+    "pushes": 8,
+    "timestamp": 1678886800
+  },
+  {
+    "level": "Level 6: Tight Space",
+    "time_ms": 45000,
+    "moves": 25,
+    "pushes": 10,
+    "timestamp": 1678886900
+  },
+  {
+    "level": "Level 7: Multiple Targets",
+    "time_ms": 60000,
+    "moves": 30,
+    "pushes": 12,
+    "timestamp": 1678887000
+  },
+  {
+    "level": "Level 8: L-Shape",
+    "time_ms": 50000,
+    "moves": 28,
+    "pushes": 9,
+    "timestamp": 1678887100
+  },
+  {
+    "level": "Level 9: Corner Entry",
+    "time_ms": 35000,
+    "moves": 18,
+    "pushes": 6,
+    "timestamp": 1678887200
+  },
+  {
+    "level": "Level 10: Maze-like",
+    "time_ms": 75000,
+    "moves": 40,
+    "pushes": 15,
+    "timestamp": 1678887300
+  },
+  {
+    "level": "Level 11: Two Boxes Parallel",
+    "time_ms": 28000,
+    "moves": 16,
+    "pushes": 7,
+    "timestamp": 1678887400
+  },
+  {
+    "level": "Level 12: Diagonal Push",
+    "time_ms": 22000,
+    "moves": 14,
+    "pushes": 5,
+    "timestamp": 1678887500
+  },
+  {
+    "level": "Level 13: U-Turn",
+    "time_ms": 40000,
+    "moves": 22,
+    "pushes": 9,
+    "timestamp": 1678887600
+  },
+  {
+    "level": "Level 14: Narrow Passage",
+    "time_ms": 55000,
+    "moves": 35,
+    "pushes": 13,
+    "timestamp": 1678887700
+  },
+  {
+    "level": "Level 15: Boxes in a Row",
+    "time_ms": 38000,
+    "moves": 20,
+    "pushes": 10,
+    "timestamp": 1678887800
+  },
+  {
+    "level": "Level 16: Obstacle Course",
+    "time_ms": 65000,
+    "moves": 38,
+    "pushes": 14,
+    "timestamp": 1678887900
+  },
+  {
+    "level": "Level 17: Inner Walls",
+    "time_ms": 48000,
+    "moves": 27,
+    "pushes": 11,
+    "timestamp": 1678888000
+  },
+  {
+    "level": "Level 18: Multiple Boxes",
+    "time_ms": 70000,
+    "moves": 42,
+    "pushes": 16,
+    "timestamp": 1678888100
+  },
+  {
+    "level": "Level 19: Exit Strategy",
+    "time_ms": 42000,
+    "moves": 24,
+    "pushes": 8,
+    "timestamp": 1678888200
+  },
+  {
+    "level": "Level 20: The Grand Finale",
+    "time_ms": 90000,
+    "moves": 50,
+    "pushes": 20,
+    "timestamp": 1678888300
+  }
+]

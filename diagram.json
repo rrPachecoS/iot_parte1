@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "author": "Dr. German Jesus Pereira Muñoz",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 116.1,
+      "left": 57.35,
+      "rotate": 90,
+      "attrs": { "env": "micropython-20220618-v1.19.1" }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled2",
+      "top": 281.54,
+      "left": 173.03,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 131,
+      "left": -105.6,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -91,
+      "left": 244.2,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 196,
+      "left": -75.7,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 43.5,
+      "left": -117.9,
+      "rotate": 270,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joystick1",
+      "top": 306.6,
+      "left": -42.6,
+      "rotate": -180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 263.15,
+      "left": -240,
+      "attrs": { "value": "4700" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": 173.1, "left": -168.6, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -65.7, "left": 15.1, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP5", "oled2:SCL", "green", [ "v-38.6", "h113.2" ] ],
+    [ "oled2:SDA", "pico:GP4", "yellow", [ "v-134.4", "h-113.43" ] ],
+    [ "pico:GND.1", "oled2:GND", "black", [ "v-19.4", "h84.7" ] ],
+    [ "oled2:VCC", "pico:3V3", "red", [ "v-19.2", "h-76.65", "v-20.2" ] ],
+    [ "btn1:2.r", "pico:GND.4", "black", [ "h48.2", "v0.2", "h9.6" ] ],
+    [ "keypad1:C4", "pico:GND.3", "black", [ "v-0.3", "h-161.5" ] ],
+    [ "keypad1:R1", "pico:GP10", "white", [ "h-153.6", "v134.6" ] ],
+    [ "keypad1:R2", "pico:GP11", "white", [ "v-0.4", "h-180.7" ] ],
+    [ "keypad1:R3", "pico:GP12", "white", [ "v-0.3", "h-190.3" ] ],
+    [ "keypad1:R4", "pico:GP13", "white", [ "v-0.2", "h-182.4", "v105.8" ] ],
+    [ "pico:GND.5", "rgb1:COM", "black", [ "v29.8", "h-107.3" ] ],
+    [ "rgb1:R", "pico:GP16", "red", [ "v28.8", "h96" ] ],
+    [ "rgb1:G", "pico:GP17", "green", [ "v28.8", "h58.9" ] ],
+    [ "rgb1:B", "pico:GP18", "blue", [ "v19.2", "h68.8" ] ],
+    [ "pico:GND.4", "bz1:1", "black", [ "v-77", "h-116.9" ] ],
+    [ "bz1:2", "pico:GP14", "orange", [ "v0", "h114.8" ] ],
+    [ "joystick1:GND", "pico:GND.7", "black", [ "h86.4", "v-173.8" ] ],
+    [ "joystick1:VCC", "pico:3V3", "red", [ "v9.6", "h155.3" ] ],
+    [ "joystick1:VERT", "pico:GP27", "green", [ "v28.8", "h124.8" ] ],
+    [ "joystick1:HORZ", "pico:GP26", "green", [ "v38.4", "h86.4", "v-212.2" ] ],
+    [ "dht1:SDA", "pico:GP19", "yellow", [ "v9.6", "h182.5", "v-49" ] ],
+    [ "dht1:VCC", "joystick1:VCC", "red", [ "v153.6", "h144" ] ],
+    [ "dht1:GND", "pico:GND.5", "black", [ "h144", "v0", "h1.7" ] ],
+    [ "r1:2", "dht1:SDA", "green", [ "v0", "h18", "v-9.6" ] ],
+    [ "r1:1", "dht1:NC", "green", [ "v19.2", "h86.3" ] ],
+    [ "pico:GND.2", "ultrasonic1:GND", "black", [ "v0" ] ],
+    [
+      "pico:VBUS",
+      "ultrasonic1:VCC",
+      "#8f4814",
+      [ "v1", "h363.1", "v-326.4", "h-556.8", "v105.6" ]
+    ],
+    [ "ultrasonic1:TRIG", "pico:GP7", "gray", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "pico:GP6", "yellow", [ "v0" ] ],
+    [ "joystick1:SEL", "pico:GP15", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
